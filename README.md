@@ -1,5 +1,4 @@
-# The Double-Edged Blade
-The name is a placeholder until I come up with something better. Or I might keep it. idk
+# Double-Edged Blade - All Under Control
 
 I'm gonna do it. I'm gonna make my first game.
 
