@@ -80,7 +80,7 @@ label start:
     "You look over to see a girl sitting alone in the back row. She looks up at the mention of her name."
     "You go to sit next to her. You notice she’s sketching something on a piece of paper."
 
-    als "Right, now that’s sorted, we can start with the register (note for american audiences: attendance)."
+    als "Right, now that’s sorted, we can start with the register."
 
     "The teacher starts to call the register."
     als '“Catherine?” “Here, Miss.”'
@@ -297,7 +297,7 @@ label tourDt:
     show elise neutral:
         xalign 0.5
     show mr silversaw smile at left
-    saw "Well now, I think it’s almost time you both returned to your form (note for american viewers: homeroom class) room, yes?"
+    saw "Well now, I think it’s almost time you both returned to your form room, yes?"
     show elise laughter:
         xalign 0.5
     elise "Ah, that’s right! I’ll see you later, Sir!"
@@ -383,25 +383,50 @@ label backInForm:
     scene notyet
 
     "Now it's lunchtime, and you're in the Courtyard."
-    
+    scene courtyard2
     "Everyone’s outside at this time."
-    "You sit alone at a table. Everyone else seems to have friends they’re talking to, except you, that is."
-    "You probably would have stuck with Elise, but she ran off somewhere. You don’t know where, though."
+    "You sit alone at a table. Everyone else seems to have friends they’re talking to, except you."
+    "You probably would have stuck with Elise, but she ran off somewhere."
     "As that thought crosses your mind, you see someone walking towards you."
     "You’ve seen this girl before, she’s in your registration group."
+    
+    show johanna neutral at left
+    with easeinleft
 
     johanna "Hey, Raymond!"
+
+    show ray awkward at right
+    with easeinright
+
     ray "H-hi...Johanna, was it?"
+
+    show johanna laughter at left
+
     johanna "Yep, that’s me! Can I ask you something real quick?"
+
     ray "Um...okay…"
+
+    show johanna surprise at left
+
+    show ray neutral at right
+
     johanna "D'you know where Elise is? She left this behind in registration."
 
     "Johanna holds up the diagram of the mechanical wings Elise had been sketching."
 
     ray "Oh, um...I don’t know, but she said she’s usually in the art studio, or in the workshops?"
+
+    show johanna laughter at left
+    show ray smile at right
+
     johanna "Ah, okay, let’s go check there, then."
 
+    hide johanna with easeoutleft
+    hide ray with easeoutleft
+
     "The two of you go to the workshop classroom."
+
+    scene oh look
 
     "The door is already open, and you see Elise and Mr Silversaw, the engineering teacher. Elise appears to be looking for something in her bag."
 
@@ -437,17 +462,62 @@ label backInForm:
 
     elise "I started this a couple months ago, I think."
 
-    saw "Hmm, your improved design looks a lot better, we’ll start on it tomorrow. Lunchtime is almost over, you should get back to class now."
+    saw "Hmm, your improved design looks a lot better, we’ll start on it on Thursday. Lunchtime is almost over, you should get back to class now."
 
     elise "Oh, it’s that time already, see you later, Sir!"
 
     "You, Elise and Johanna leave the workshop."
 
-    "A few days later..."
+    "It’s now time to go home."
+    "You pack up your stuff and are ready to go. Elise is looking through her bag, muttering to herself."
 
-    "to be continued-"
+    elise "Ah, great, I left my folder in the workshop…"
+    ray "We can quickly go and get it…"
 
-    
+    "You look out of the window. The rain seems to have become quite heavy."
+
+    ray "...it won’t take long."
+
+    "The two of you run through the rain into the workshop classroom."
+    "Looks like Mr Silversaw has already left for the day. You see a folder on the teacher’s desk."
+
+    elise "There it is!"
+
+    "Elise picks up her folder, at which point a strong breeze blows some papers out from it and scatters them on the floor, some landing in the tool cupboard."
+
+    "You both pick up the pages scattered around, but when you get the one in the cupboard…"
+    "The strong wind blows again, and slams the cupboard door shut, with both of you inside."
+
+    elise "What was that-what was that?!"
+
+    "You try to open the door. It’s locked, and doesn’t open from inside."
+
+    ray "Is anyone out there?! We’re trapped!"
+
+    elise "Oh, Ray, what do we do?"
+
+    ray "Don’t worry, Elise, we’ll find a way out...somehow. It’s not like anything can happen to us in here..."
+
+    "And it’s at that exact moment that the lights go out and there’s a power cut. You had to say it, didn’t you?"
+
+    ray "...great."
+
+    elise "This is great!"
+
+    ray "Well, I have just the thing for a situation like this…"
+
+    "You pull out a box of matches from your pocket."
+
+    elise "Why...why do you have those??"
+
+    ray "You never know when you’ll need them."
+
+    elise "You’re not going to start a fire, are you?"
+
+    "You light the match."
+
+    ray "Only a tiny one."
 
 
 
+    "It's at this point that Eleeza stops writing."
