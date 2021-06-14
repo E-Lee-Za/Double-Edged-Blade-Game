@@ -298,10 +298,11 @@ screen navigation():
         yalign 0.5
 
         spacing gui.navigation_spacing
+        
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start") action Start() xpos 100 ypos -100 text_size 50 text_color '#dae2f1' text_hover_color '#bf4448'
 
         else:
 
@@ -309,9 +310,9 @@ screen navigation():
 
             textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Load") action ShowMenu("load") xpos 130 ypos -100 text_size 50 text_color '#dae2f1' text_hover_color '#2346ff'
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Preferences") action ShowMenu("preferences") xpos 160 ypos -100 text_size 50 text_color '#dae2f1' text_hover_color '#bf4448'
 
         if _in_replay:
 
@@ -321,18 +322,18 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("About") action ShowMenu("about") xpos 190 ypos -100 text_size 50 text_color '#dae2f1' text_hover_color '#2346ff'
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Help") action ShowMenu("help") xpos 220 ypos -100 text_size 50 text_color '#dae2f1' text_hover_color '#bf4448'
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Quit") action Quit(confirm=not main_menu) xpos 250 ypos -100 text_size 50 text_color '#dae2f1' text_hover_color '#2346ff'
 
 
 style navigation_button is gui_button
@@ -360,6 +361,8 @@ screen main_menu():
     style_prefix "main_menu"
 
     add gui.main_menu_background
+    add "gui/titlescreen.png" zoom 0.275 at titlecharacters
+    add "gui/aucdark.png" zoom 0.3 at titlelogo
 
     ## This empty frame darkens the main menu.
     frame:

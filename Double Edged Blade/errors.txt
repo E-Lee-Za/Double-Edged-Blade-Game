@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/myscreens.rpy", line 20: expected a keyword argument or end of line.
+    action Jump("elisestory")]
+                             ^
+
+Ren'Py Version: Ren'Py 7.3.5.606
+Mon Jun 14 17:52:56 2021
