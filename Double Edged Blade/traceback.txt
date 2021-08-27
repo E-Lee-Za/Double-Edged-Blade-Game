@@ -32,5 +32,5 @@ AttributeError: 'NoneType' object has no attribute 'stores'
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
- 
-Mon Jun 14 17:54:18 2021
+Double-Edged Blade: All Under Control 1.0
+Thu Aug 26 00:31:05 2021

@@ -1,14 +1,71 @@
-#screen tourCourtyard():   
-#    imagemap:
-#        ground "images/courtyard1.png"
-#        hotspot(180, 305, 790, 680) action Jump('tourDt')
-#        hotspot(805, 305, 1400, 680) action Jump("tourArt")
+screen tourCourtyardR():
+    imagemap:
+        ground "images/courtyard1.png"
+        hotspot(1200, 430, 1530, 760) action Jump('tourArtR')
+        hotspot(300, 430, 540, 700) action Jump("tourDtR")
+    text "Control:"  size 50 color "#dae2f1" at controltitle
+    text "[control]"  size 100 color "#dae2f1" at controlnumber
 
-#screen tourCourtyard2():   
-#    imagemap:
-#        ground "images/courtyard2.png"
-#        hotspot(496, 326, 1111, 231) action Jump('tourPond')
-#        hotspot(1,340,475,870) action Jump("tourTheatre")
+screen tourCourtyard2R():
+    imagemap:
+        ground "images/courtyard2.png"
+        hotspot(1400, 290, 1580, 620) action Jump('tourLibraryR')
+        hotspot(60, 415, 235, 670) action Jump("tourTheatreR")
+    text "Control:"  size 50 color "#dae2f1" at controltitle
+    text "[control]"  size 100 color "#dae2f1" at controlnumber
+
+screen tourCourtyardE():
+    imagemap:
+        ground "images/courtyard1.png"
+        hotspot(1200, 430, 1530, 760) action Jump('tourArtE')
+        hotspot(300, 430, 540, 700) action Jump("tourDtE")
+    text "Control:"  size 50 color "#dae2f1" at controltitle
+    text "[control]"  size 100 color "#dae2f1" at controlnumber
+
+screen tourCourtyard2E():
+    imagemap:
+        ground "images/courtyard2.png"
+        hotspot(1400, 290, 1580, 620) action Jump('tourLibraryE')
+        hotspot(60, 415, 235, 670) action Jump("tourTheatreE")
+    text "Control:"  size 50 color "#dae2f1" at controltitle
+    text "[control]"  size 100 color "#dae2f1" at controlnumber
+
+
+screen cupboardR():
+    imagemap:
+        ground "images/cupboard.png"
+        hotspot(1210, 640, 1640, 835) action Jump('screwdriverR')
+        #hotspot(250, 280, 400, 540) action Jump('lightswitchR')
+        hotspot(895, 95, 1235, 345) action Jump('escapecupboardR')
+    text "Control:"  size 50 color "#dae2f1" at controltitle
+    text "[control]"  size 100 color "#dae2f1" at controlnumber
+
+screen cupboardE():
+    imagemap:
+        ground "images/cupboard.png"
+        hotspot(1210, 640, 1640, 835) action Jump('screwdriverE')
+        #hotspot(250, 280, 400, 540) action Jump('lightswitchE')
+        hotspot(895, 95, 1235, 345) action Jump('escapecupboardE')
+    text "Control:"  size 50 color "#dae2f1" at controltitle
+    text "[control]"  size 100 color "#dae2f1" at controlnumber
+
+screen museumR():
+    imagemap:
+        ground "images/museum.png"
+        hotspot(80, 500, 555, 700) action Jump('royalportraitsR')
+        hotspot(570, 160, 930, 500) action Jump('mapofscholiteR')
+        hotspot(1250, 165, 1630, 630) action Jump('sworddisplayR')
+    text "Control:"  size 50 color "#dae2f1" at controltitle
+    text "[control]"  size 100 color "#dae2f1" at controlnumber
+
+screen museumE():
+    imagemap:
+        ground "images/museum.png"
+        hotspot(80, 500, 555, 700) action Jump('royalportraitsE')
+        hotspot(570, 160, 930, 500) action Jump('mapofscholiteE')
+        hotspot(1250, 165, 1630, 630) action Jump('sworddisplayE')
+    text "Control:"  size 50 color "#dae2f1" at controltitle
+    text "[control]"  size 100 color "#dae2f1" at controlnumber
 
 screen charselect():
     imagemap:
@@ -31,4 +88,4 @@ screen raydesc():
 
 screen elisedesc():
     add "gui/overlay/char_description.png" at eliseselectbackground
-    text "Princess Elise Realis:\nHeir of the Realis Region.\n\nShe wants to be confident and a\ngood friend.She likes to build things,\nand sometimes they work. She's\na little scatterbrained...\n\n...or maybe 'a little' is an understatement." size 40 color "#dae2f1" at eliseselecttext
+    text "Princess Elise Realis:\nHeir of the Realis Region.\n\nShe wants to be confident and a\ngood friend. She likes to build things,\nand sometimes they work. She's\na little scatterbrained...\n\n...or maybe 'a little' is an understatement." size 40 color "#dae2f1" at eliseselecttext

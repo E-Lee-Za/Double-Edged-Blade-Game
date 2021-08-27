@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/myscreens.rpy", line 20: expected a keyword argument or end of line.
-    action Jump("elisestory")]
-                             ^
+The label lightswitchR is defined twice, at
+  File "game/elise.rpy", line 654 and
+  File "game/ray.rpy", line 734.
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Jun 14 17:52:56 2021
+Thu Aug 26 00:29:46 2021

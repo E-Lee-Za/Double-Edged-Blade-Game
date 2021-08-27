@@ -1,41 +1,17 @@
-transform titlecharacters:
-        ypos 1080 xpos 950
-        easein 0.5 ypos -10
-        easein 0.5 ypos 0
+define control = 50
+define violent = 0
+define peaceful = 0
+define year = ''
+define controlcolour = "#dae2f1"
+define currentyear = 0
 
-transform titlelogo:
-        xpos 1920 ypos 700
-        pause 1
-        easein 0.75 xpos 1000
+#Tour Scene Variables (Both)
+define seenArtR = False
+define seenDtR = False
+define seenLibraryR = False
+define seenTheatreR = False
 
-transform rayselectbackground:
-        on show:
-                ypos 1080 xpos 1030
-                easein 0.25 ypos 0
-        on hide:
-                ypos 0 xpos 1030
-                easein 0.15 ypos 1080
-
-transform eliseselectbackground:
-        on show:
-                ypos 1080 xpos 0
-                easein 0.25 ypos 0
-        on hide:
-                ypos 0 xpos 0
-                easein 0.15 ypos 1080
-
-transform rayselecttext:
-        on show:
-                xpos 1130 ypos 400 alpha 0
-                easein 0.3 ypos 350 alpha 1
-        on hide:
-                xpos 1130 ypos 350 alpha 1
-                easein 0.2 ypos 500 alpha 0
-
-transform eliseselecttext:
-        on show:
-                xpos 100 ypos 400 alpha 0
-                easein 0.3 ypos 350 alpha 1
-        on hide:
-                xpos 100 ypos 350 alpha 1
-                easein 0.2 ypos 500 alpha 0
+define seenArtE = False
+define seenDtE = False
+define seenLibraryE = False
+define seenTheatreE = False
