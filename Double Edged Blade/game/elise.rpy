@@ -290,7 +290,7 @@ label tourArtE:
     if not seenDtE:
         call screen tourCourtyardE()
 
-    if seenDtE and seenArEt:
+    if seenDtE and seenArtE:
         scene courtyard2
         call screen tourCourtyard2E()
 
