@@ -98,7 +98,7 @@ style frame:
 screen say(who, what):
     style_prefix "say"
     text "Control:"  size 50 color "#dae2f1" at controltitle
-    text "[control]"  size 100 color "#dae2f1" at controlnumber
+    text "[mp.control]"  size 100 color "#dae2f1" at controlnumber
     window:
         id "window"
 
@@ -208,7 +208,7 @@ style input:
 screen choice(items):
     style_prefix "choice"
     text "Control:"  size 50 color "#dae2f1" at controltitle
-    text "[control]"  size 100 color "#dae2f1" at controlnumber
+    text "[mp.control]"  size 100 color "#dae2f1" at controlnumber
     vbox:
         for i in items:
             textbutton i.caption action i.action
@@ -253,7 +253,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.97
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')

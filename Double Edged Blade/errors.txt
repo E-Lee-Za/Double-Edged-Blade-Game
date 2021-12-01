@@ -2,9 +2,85 @@
 errors listed below, and try again.
 
 
-The label lightswitchR is defined twice, at
-  File "game/elise.rpy", line 654 and
-  File "game/ray.rpy", line 734.
+The label tourArtE is defined twice, at
+  File "game/elise.rpyc", line 256 and
+  File "game/elise1.rpy", line 256.
+
+The label tourDtE is defined twice, at
+  File "game/elise.rpyc", line 298 and
+  File "game/elise1.rpy", line 298.
+
+The label tourLibraryE is defined twice, at
+  File "game/elise.rpyc", line 347 and
+  File "game/elise1.rpy", line 347.
+
+The label tourTheatreE is defined twice, at
+  File "game/elise.rpyc", line 357 and
+  File "game/elise1.rpy", line 357.
+
+The label firstcontinuedE is defined twice, at
+  File "game/elise.rpyc", line 376 and
+  File "game/elise1.rpy", line 376.
+
+The label screwdriverE is defined twice, at
+  File "game/elise.rpyc", line 648 and
+  File "game/elise1.rpy", line 648.
+
+The label escapecupboardE is defined twice, at
+  File "game/elise.rpyc", line 658 and
+  File "game/elise1.rpy", line 658.
+
+The label royalportraitsE is defined twice, at
+  File "game/elise.rpyc", line 796 and
+  File "game/elise1.rpy", line 796.
+
+The label mapofscholiteE is defined twice, at
+  File "game/elise.rpyc", line 828 and
+  File "game/elise1.rpy", line 828.
+
+The label sworddisplayE is defined twice, at
+  File "game/elise.rpyc", line 848 and
+  File "game/elise1.rpy", line 848.
+
+The label tourArtR is defined twice, at
+  File "game/ray.rpyc", line 316 and
+  File "game/ray1.rpy", line 316.
+
+The label tourDtR is defined twice, at
+  File "game/ray.rpyc", line 358 and
+  File "game/ray1.rpy", line 358.
+
+The label tourLibraryR is defined twice, at
+  File "game/ray.rpyc", line 407 and
+  File "game/ray1.rpy", line 407.
+
+The label tourTheatreR is defined twice, at
+  File "game/ray.rpyc", line 417 and
+  File "game/ray1.rpy", line 417.
+
+The label firstcontinuedR is defined twice, at
+  File "game/ray.rpyc", line 436 and
+  File "game/ray1.rpy", line 436.
+
+The label screwdriverR is defined twice, at
+  File "game/ray.rpyc", line 727 and
+  File "game/ray1.rpy", line 727.
+
+The label escapecupboardR is defined twice, at
+  File "game/ray.rpyc", line 737 and
+  File "game/ray1.rpy", line 737.
+
+The label royalportraitsR is defined twice, at
+  File "game/ray.rpyc", line 878 and
+  File "game/ray1.rpy", line 878.
+
+The label mapofscholiteR is defined twice, at
+  File "game/ray.rpyc", line 932 and
+  File "game/ray1.rpy", line 932.
+
+The label sworddisplayR is defined twice, at
+  File "game/ray.rpyc", line 963 and
+  File "game/ray1.rpy", line 963.
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Aug 26 00:29:46 2021
+Wed Dec 01 09:36:11 2021

@@ -4,7 +4,7 @@ screen tourCourtyardR():
         hotspot(1200, 430, 1530, 760) action Jump('tourArtR')
         hotspot(300, 430, 540, 700) action Jump("tourDtR")
     text "Control:"  size 50 color "#dae2f1" at controltitle
-    text "[control]"  size 100 color "#dae2f1" at controlnumber
+    text "[mp.control]"  size 100 color "#dae2f1" at controlnumber
 
 screen tourCourtyard2R():
     imagemap:
@@ -12,7 +12,7 @@ screen tourCourtyard2R():
         hotspot(1400, 290, 1580, 620) action Jump('tourLibraryR')
         hotspot(60, 415, 235, 670) action Jump("tourTheatreR")
     text "Control:"  size 50 color "#dae2f1" at controltitle
-    text "[control]"  size 100 color "#dae2f1" at controlnumber
+    text "[mp.control]"  size 100 color "#dae2f1" at controlnumber
 
 screen tourCourtyardE():
     imagemap:
@@ -20,7 +20,7 @@ screen tourCourtyardE():
         hotspot(1200, 430, 1530, 760) action Jump('tourArtE')
         hotspot(300, 430, 540, 700) action Jump("tourDtE")
     text "Control:"  size 50 color "#dae2f1" at controltitle
-    text "[control]"  size 100 color "#dae2f1" at controlnumber
+    text "[mp.control]"  size 100 color "#dae2f1" at controlnumber
 
 screen tourCourtyard2E():
     imagemap:
@@ -28,7 +28,7 @@ screen tourCourtyard2E():
         hotspot(1400, 290, 1580, 620) action Jump('tourLibraryE')
         hotspot(60, 415, 235, 670) action Jump("tourTheatreE")
     text "Control:"  size 50 color "#dae2f1" at controltitle
-    text "[control]"  size 100 color "#dae2f1" at controlnumber
+    text "[mp.control]"  size 100 color "#dae2f1" at controlnumber
 
 
 screen cupboardR():
@@ -38,7 +38,7 @@ screen cupboardR():
         #hotspot(250, 280, 400, 540) action Jump('lightswitchR')
         hotspot(895, 95, 1235, 345) action Jump('escapecupboardR')
     text "Control:"  size 50 color "#dae2f1" at controltitle
-    text "[control]"  size 100 color "#dae2f1" at controlnumber
+    text "[mp.control]"  size 100 color "#dae2f1" at controlnumber
 
 screen cupboardE():
     imagemap:
@@ -47,7 +47,7 @@ screen cupboardE():
         #hotspot(250, 280, 400, 540) action Jump('lightswitchE')
         hotspot(895, 95, 1235, 345) action Jump('escapecupboardE')
     text "Control:"  size 50 color "#dae2f1" at controltitle
-    text "[control]"  size 100 color "#dae2f1" at controlnumber
+    text "[mp.control]"  size 100 color "#dae2f1" at controlnumber
 
 screen museumR():
     imagemap:
@@ -56,7 +56,7 @@ screen museumR():
         hotspot(570, 160, 930, 500) action Jump('mapofscholiteR')
         hotspot(1250, 165, 1630, 630) action Jump('sworddisplayR')
     text "Control:"  size 50 color "#dae2f1" at controltitle
-    text "[control]"  size 100 color "#dae2f1" at controlnumber
+    text "[mp.control]"  size 100 color "#dae2f1" at controlnumber
 
 screen museumE():
     imagemap:
@@ -65,7 +65,7 @@ screen museumE():
         hotspot(570, 160, 930, 500) action Jump('mapofscholiteE')
         hotspot(1250, 165, 1630, 630) action Jump('sworddisplayE')
     text "Control:"  size 50 color "#dae2f1" at controltitle
-    text "[control]"  size 100 color "#dae2f1" at controlnumber
+    text "[mp.control]"  size 100 color "#dae2f1" at controlnumber
 
 screen charselect():
     imagemap:

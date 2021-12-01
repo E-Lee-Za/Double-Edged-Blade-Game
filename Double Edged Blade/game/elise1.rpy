@@ -1,139 +1,102 @@
-label raystart:
+label elisefirst:
     #First Year.
-    $ currentyear = 1
-
-    "*ring ring ring*"
-
-    "The telephone rings from another hallway."
-
-    scene ray staring out of window with fade
-
-    "You stare outside of your bedroom window for a while."
-
-    "Maid" "(from hallway) Hello, this is the Pseudeland Manor."
-    "Maid" "Oh, yes, I’ll let them know right away."
-    "Maid" "Your Majesty, the school just called."
-    
-    show ray staring out of window2
-    "A bird flies past."
-
-    show ray staring out of window
-    ray "(The school…?)"
-
-    rosanna "Hello?"
-
-    "Your mother picks up the call."
-
-    rosanna "Yes."
-    rosanna "Ah, perfect!"
-    rosanna "Tuesday? Yes, I’ll inform him immediately."
-    rosanna "Yes, thank you. Good evening."
-
-    "She hangs up the call."
-
-    show ray staring out of window3
-    "The bird flies back in the other direction."
-
-    rosanna "Raymond? Can you come here for a minute?"
-
-    "You have been summoned."
-    show ray staring out of window5
-    "You walk out of the room and down the hallway, to where the phone is."
-
-    scene ray and rosanna and phone with fade
-
-    ray "Yes, Mother?"
-
-    rosanna "Laurum Secondary Academy just called. The arrangements are all finalised, and your first day is on Tuesday."
-
-    ray "Tuesday?"
-
-    rosanna "Yes. We have everything ready, and we’ll show you how to get there on the day. It’s only a quick train ride."
-
-    show ray and rosanna and phone2
-    ray "Where was it, again?"
-
-    rosanna "It’s in Scholite City."
-
-    ray "But that’s outside of the region...how will I know how to navigate it? I’ve never been outside of the Pseudeland Region…"
-
-    show ray and rosanna and phone3
-    rosanna "I’m sure you’ll find your way quickly."
-
-    show i hope so with fade
-    ray "I hope so."
-
-    #First Year. LSA. Ray meets Ms Alsudo
-    
-    scene black with fade
-
-    ray "(Well, this is the place.)"
-
-    play music "audio/first-year-prologue.mp3"
+    $ mp.currentyear = 1
+    $ mp.character = "Elise"
 
     scene lsa outside day with fade
 
-    ray "(Laurum Secondary Academy.)"
-    ray "(The most expensive private school in Scholite City.)"
-    ray "(My parents say it’s also one of the best…)"
-    ray "(...not that I’ve ever been to any others to compare it with.)"
+    elise "(Summer term at Laurum Secondary Academy...)"
+    scene rest of the class with fade
+    elise "(Life is rather slow around this time, and not much really goes on, to be honest.)"
+    elise "(Sometimes I think I'm just waiting for something to happen.)"
 
-    scene ray school office with fade
+    "Your class' form tutor arrives. You don't pay much mind, but instead wait for your name to be called for attendance."
 
-    ray "(Apparently, someone was supposed to meet me here.)"
-    ray "(I am in the right place...right?)"
-    ray "(I wonder when-)"
+    als "Good morning everyone! Sorry I'm late- Let's start off with registration, shall we?"
+    als "Let's see..."
+    "“Catherine?” “Here, Miss.”"
+    "“Catia?” “Here, Miss.”"
+    "“Antoine?” “Here, Miss.”"
+    "The sound of names and responses becomes simple background noise to you."
 
-    "???" "Ah, you must be Raymond, our new student!"
+    "“Elise?”"
 
-    "You flinch a little."
+    elise "Here, Miss."
 
-    scene ruby school office with dissolve
-    "You turn around to see a lady standing behind you."
+    elise "(That's all I have to listen out for.)"
+    
+    scene blackboard with fade
+    show ms alsudo neutral
+    als "And that's everyone!"
+    als "Now, today, I have some exciting news..."
+    als "Tomorrow, a new student is joining our class!"
 
-    ray "Y-yes, yes, that’s me!"
+    elise "(!)"
+    elise "(New student...?)"
+    elise "(But there's only two weeks of school left...?)"
 
-    als "I must have startled you, sorry about that."
-    als "I’m Ms Alsudo, and I’ll be your form tutor here."
-    als "Nice to meet you, Raymond!"
+    show ms alsudo smile
+    als "Now, we'll all make him feel welcome, alright?"
+    als "That's all the news I have for today. It's time to pack up and go to lessons, have a great day everyone!"
 
-    ray "It’s nice to meet you, too."
-    show ruby school office2
-    als "Welcome to Laurum Secondary Academy! Now, I arrived a little late, so how about we head over to your form room, and we can get you settled in?"
+    hide ms alsudo with easeoutright
 
-    "You nod silently, and follow Ms Alsudo out of the school office."
+    elise "(Since a new student is coming...maybe it would be a good idea to meet him...)"
+    elise "(...before everyone else does...)"
+    
+    "You watch as everyone else leaves the room."
 
-    scene courtyard2 with dissolve
+    show elise neutraler at left with easeinleft
+    elise "Um...Miss?"
 
-    "The courtyard is a lot bigger than what you could see from the gates."
-
-    als "So our classroom is just over in the Theatre building..."
-
-    ray "(This place is so spacious...)"
-
-    ray "(So this is what a proper school is like.)"
-    ray "(Well, it’s very much different from the study we have at home.)"
-
-    scene classroom door
-
-    als "And this is where you and the rest of your class come to be registered, every morning and afternoon."
-
-    als "How about we go and meet your new classmates?"
-
-    ray "(Ah, that’s the thing about proper schools. There are other kids here too.)"
-
-    #First Year. Form Room. Ray meets Elise and the students.
+    show ms alsudo neutral at right with easeinright
+    als "Hello, Elise! Need to ask something?"
+    show elise surprise at left
+    elise "Uh...yeah...so there's the new student coming in tomorrow..."
+    elise "And usually a student gets the job of giving them a tour around the school..."
+    elise "So I was wondering..."
+    show elise nervous at left
+    elise "...could I do the tour?"
+    show ms alsudo smile at right
+    als "Of course! And thank you for volunteering."
+    show elise laughter at left
+    elise "Thanks, miss!"
+    als "See you later, Elise."
+    hide elise with easeoutleft
 
     scene black with dissolve
+
+    scene lsa outside day with dissolve
+
+    show elise nervous with easeinleft
+
+    elise "Ah...well, I just did that."
+    elise "Why did I do that..."
+    show elise panic
+    elise "I'm not fit to talk to new people..."
+    elise "What if I mess up?"
+    show elise nervous
+    elise "Well...I could just not worry about it."
+    elise "That takes less energy to do, anyway."
+
+    scene black with dissolve
+
+    "And so arrives the next day."
+
     scene blackboard with dissolve
-    pause 0.5
+
+    elise "(Ms Alsudo hasn't arrived yet...)"
+    elise "(Maybe she'll forget about the tour thing and I'll not make a fool of myself...)"
+
+    "She arrives."
+
+    elise "(Oh.)"
+
     show ms alsudo smile
     with easeinleft
 
     als "Everyone, this is the new student I mentioned yesterday!"
-
-    "Ms Alsudo looks your way."
-
+    "She turns towards someone unfamiliar."
     show ms alsudo neutral
     als "Would you like to introduce yourself?"
 
@@ -147,19 +110,15 @@ label raystart:
     show ray shy
     ray "Um...my name is Raymond, uh…i-it’s nice to meet you all..."
     ray "And...that’s--that’s all I have to say for now."
-
-    scene rest of the class with dissolve
-
-    ray "(Oh yes, very smooth indeed, you fool.)"
-    ray "(That’s one way to make a first impression. Wait until they find out your full title.)"
-
+    show ray awkward
     als "Thank you, Raymond. Now, let’s see..."
     als "You can go sit next to Elise over there at the back, okay?"
 
-    "You look over to see a girl sitting alone in the back row. She looks up at the mention of her name."
-    "You go to sit next to her. You notice she’s sketching something on a piece of paper."
+    elise "(O h .)"
 
-    scene awkward with dissolve
+    hide ray with easeoutleft
+
+    show awkward with fade
 
     als "Right, now that’s sorted, we can start with the register."
 
@@ -167,55 +126,44 @@ label raystart:
     "“Catherine?” “Here, Miss.”"
     "“Catia?” “Here, Miss.”"
 
-    ray "(A class...with other kids...with whom I should interact at some point, right?)"
-    ray "(Well, there’s someone right here.)"
-    ray "(What am I supposed to do? Say something?)"
-    ray "(Maybe I should just...)"
-    ray "Hi."
+    elise "(Alright. New person. Right next to me.)"
+    elise "(Now, I could try to strike up a conversation...)"
+    elise "(...ehhh, but pretending not to notice him is a lot less risky...just don’t look up...)"
     show awkward2
-    "The girl looks up, seemingly a little startled."
+    ray "Hi."
 
+    elise "(Ah, great.)"
+    elise "(How are you supposed to do this…? Uh...)"
     elise "H-hi…"
-
     hide awkward2
+    "You continue sketching, trying not to look up."
 
-    "She continues sketching while glancing at you occasionally."
+    elise "(Oh my goodness, I said that awkwardly...)"
 
+    show awkward2
+    ray "That’s a nice drawing you’re making."
 
+    elise "O-oh...thank you."
+
+    ray "It looks like a pair of wings!"
+
+    elise "Well,uh...y-yes, it is...just some plans for something…"
+
+    ray "Oh, what are you planning?"
+
+    elise "(No...if I tell him what it is he’ll probably think it’s weird...)"
+    elise "N-nothing important…(!)"
+    hide awkward2
     "“Johanna?” “Here, Miss.”"
-
-    ray "(Hmm..should I say something else or stay quiet?)"
+    "“Antoine?” “Here, Miss.”"
+    elise "(Come on, get it together...what happened to 'getting to know someone new'?)"
 
     menu:
-        "Say something":
-            ray "(What can I say to start a conversation…?)"
-
-            show awkward2
-
-            ray "That’s a nice drawing you’re making."
-
-            elise "O-oh...thank you."
-
-            ray "It looks like a pair of wings!"
-
-            elise "Well,uh...y-yes, it is...just some plans for something…"
-
-            ray "Oh, what are you planning?"
-
-            elise "N-nothing important…(!)"
-
-            show awkward
-
-            ray "(I think I might have made her nervous...darn.)"
-            
-            "“Antoine?” “Here, Miss.”"
-
-            "The two of you are silent for a while, listening to all the names of other classmates, waiting for your own."
+        "Attempt conversation":
             show awkward3
-            "The girl places her pencil onto the table."
-
+            "You place your pencil onto the table."
+            elise "(Alright, let's try it.)"
             show awkward4
-
             elise "So uh...what did you say your name was?"
 
             "“Raymond?”"
@@ -229,29 +177,18 @@ label raystart:
             elise "Here, Miss."
 
             ray "A pleasure to meet you too, Elise."
-            ray "(I can see she's trying her best.)"
 
-
+            elise "(Hey, that worked!)"
+        
         "Stay quiet":
             "..."
-            
-            "“Johanna?” “Here, Miss.”"
-            "“Antoine?” “Here, Miss.”"
-            
-            ray "(Alright then, Ray. Stay in this awkward silence you’ve brought upon yourself.)"
-
-            "The two of you are silent for a while, listening to all the names of other classmates, waiting for your own."
-
             "“Raymond?”"
-            
+
             ray "Here, Miss."
-            ray "(Darn. I can feel the whole class looking at me.)"
 
             "“Elise?”"
-            
-            elise "Here, Miss."
 
-            ray "(I think that’s everyone.)"
+            elise "Here, Miss."
 
     als "Right, now that’s sorted, Maribel, can you take this to the office, please?"
 
@@ -259,32 +196,34 @@ label raystart:
 
     als "Raymond? Elise? Please can you come up here for a bit?"
 
-    "You and Elise walk over to the teacher."
-
+    elise "(I guess she didn't forget. Ah...it's okay.)"
+    "You and Raymond walk over to the teacher."
+    
     scene blackboard with dissolve
     show ms alsudo neutral at right
     pause 0.5
     
-    show elise neutral with easeinleft:
+    show elise neutraler with easeinleft:
         xalign 0.25
 
-    show ray smile at left with easeinleft
+    show ray neutral at left with easeinleft
     pause 0.5
 
     als "Elise, you volunteered yesterday to show the new student around, right?"
     als "You can do that now, if you’d like."
-
+    
     elise "Yes, I think we’ll do that now, Miss."
 
     als "Alright, you two can go around the school, just make sure to be back here before the end of form-time."
 
     show ray laughter at left
     
-    show elise laughter:
+    show elise nervous:
         xalign 0.25
     "Raymond and Elise" "Thanks, Miss!"
 
     "The two of you walk outside of the classroom."
+
     show ray at offscreenleft
     show elise at offscreenleft
     with ease
@@ -292,7 +231,7 @@ label raystart:
     scene black with dissolve
     pause 0.5
     stop music fadeout 0.5
-    queue music ["audio/a-blessing-and-a-curse.mp3", "audio/blessing-piano.mp3"] loop
+    queue music ["audio/who-is-this-stranger.mp3", "audio/stranger-piano.mp3"] loop
     scene firstyear with dissolve
     pause 2.1
     show firstyearbegins
@@ -312,9 +251,9 @@ label raystart:
 
     "Click on a door to go towards it."
 
-    call screen tourCourtyardR()
+    call screen tourCourtyardE()
 
-label tourArtR:
+label tourArtE:
     scene artroom
     show elise neutral with easeinleft:
         xalign 0.25
@@ -347,16 +286,16 @@ label tourArtR:
 
     scene black with dissolve
 
-    $ seenArtR = True
-    if not seenDtR:
-        call screen tourCourtyardR()
+    $ seenArtE = True
+    if not seenDtE:
+        call screen tourCourtyardE()
 
-    if seenDtR and seenArtR:
+    if seenDtE and seenArtE:
         scene courtyard2
-        call screen tourCourtyard2R()
+        call screen tourCourtyard2E()
 
 
-label tourDtR:
+label tourDtE:
     scene workshop
     show ray smile with easeinleft:
         xalign 0.25  
@@ -397,25 +336,25 @@ label tourDtR:
 
     scene black with dissolve
 
-    $ seenDtR = True
-    if not seenArtR:
-        call screen tourCourtyardR()
+    $ seenDtE = True
+    if not seenArtE:
+        call screen tourCourtyardE()
     
-    if seenDtR and seenArtR:
+    if seenDtE and seenArtE:
         scene courtyard2
-        call screen tourCourtyard2R()
+        call screen tourCourtyard2E()
 
-label tourLibraryR:
+label tourLibraryE:
     show elise neutral at right
     show ray neutral at left
     elise "Over there's the library. If you're looking for info on basically anything, it's probably in there."
     show ray smile at left
     ray "That'll come in useful, I'm sure."
 
-    call screen tourCourtyard2R()
+    call screen tourCourtyard2E()
     
 
-label tourTheatreR:
+label tourTheatreE:
     show elise neutral at right
     show ray neutral at left
     with ease
@@ -432,9 +371,9 @@ label tourTheatreR:
     show elise neutral at offscreenright
     with ease
     scene black with dissolve
-    jump firstcontinuedR
+    jump firstcontinuedE
 
-label firstcontinuedR:
+label firstcontinuedE:
     scene blackboard with dissolve
     show ms alsudo neutral at right
       
@@ -449,7 +388,7 @@ label firstcontinuedR:
     als "Lovely! I hope you’ll enjoy your time here. Also, thank you, Elise, for volunteering, you've done a good job."
     show elise laughter:
         xalign 0.25
-    "Elise smiles shyly."
+    elise "(I did a good job!)"
     elise "Thank you, Miss."
     hide ray with easeoutleft
     hide elise with easeoutleft
@@ -460,74 +399,69 @@ label firstcontinuedR:
 
     #add comic-style background here- i'll draw this later
 
-    "You and Elise collect your bags and head off to your first lesson. Your class timetables are nearly identical."
+    "You and Raymond collect your bags and head off to your first lesson. Your class timetables are nearly identical."
     scene black with dissolve
     "The rest of the day continues pretty normally, as you would expect."
-
-
-    ###start the next scene plz
+    
     scene courtyard1 with dissolve
-    "Now it's lunchtime, and you're in the Courtyard."
-    
-    "Everyone’s outside at this time."
-    "You sit alone at a table. Everyone else seems to have friends they’re talking to, except you."
-    "You probably would have stuck with Elise, but she ran off somewhere."
-    "As that thought crosses your mind, you see someone walking towards you."
-    "You’ve seen this girl before, she’s in your registration group."
-    
-    show johanna neutral at left
-    with easeinleft
+    "Lunchtime rolls around, and you suddenly remember something you had to attend to."
+    "So you hastily pack your things and run to the workshop."
 
-    johanna "Hey, Raymond!"
+    scene workshop with fade
 
-    show ray shy at right
-    with easeinright
+    show mr silversaw smile at right
 
-    ray "H-hi...Johanna, was it?"
+    silversaw "Good afternoon, Elise! You look a little worn out, did you run all the way here?"
+    show mr silversaw neutral at right
+    show elise tired at left with easeinleft
 
-    show johanna laughter at left
+    elise "Hah...hello, Sir...yeah, I did..."
 
-    johanna "Yep, that’s me! Can I ask you something real quick?"
+    show elise nervous at left
 
-    ray "Um...okay…"
+    elise "Just...trying to maximise the time I have to work on this project!"
 
-    show johanna surprise at left
+    show mr silversaw sadsmile at right
 
-    show ray neutral at right
+    silversaw "Hahah, smart idea! But don't tire yourself, okay?"
 
-    johanna "D'you know where Elise is? She left this behind in registration."
+    elise "Okay...!"
 
-    "Johanna holds up the diagram of the mechanical wings Elise had been sketching."
+    show mr silversaw smile2 at right
 
-    ray "Oh, um...I don’t know, but she said she’s usually in the art studio, or in the workshops?"
+    silversaw "Good, good!"
+    show elise neutraler at left
+    show mr silversaw neutral at right
 
-    show johanna laughter at left
-    show ray smile at right
+    silversaw "So, did you finish your sketch?"
 
-    johanna "Ah, okay, let’s go check there, then."
+    show elise laughter at left
+    elise "Yep! I've brought it with me."
 
-    hide johanna with easeoutleft
-    hide ray with easeoutleft
+    "You reach into your bag for your sketch."
+    "Looking past all of your books, that one piece of paper is not in sight."
+    show elise nervous at left
+    elise "Uh..."
+    show mr silversaw sadsmile at right
+    silversaw "Worry not, take your time."
 
-    "The two of you go to the workshop classroom."
-    scene black with dissolve
-    scene workshop with dissolve
-    
+    elise "It is…right here…"
 
-    "The door is already open, and you see Elise and Mr Silversaw, the engineering teacher. Elise appears to be looking for something in her bag."
-    show oh look with easeinleft
+    "You cannot find what you are looking for."
+    show elise neutraler at left
+    elise "Well…that’s strange."
+
+    silversaw "Misplaced it?"
+
     elise "I’m sure I put it in here…"
 
+    show mr silversaw neutral at right
     silversaw "Oh, look, Elise, some friends have come to pay a visit!"
 
-    "Elise looks up and sees you and Johanna."
-
+    "You look up. Raymond is there with one of your other classmates, Johanna, who is holding a familiar piece of paper."
+    show elise surprise at left
     elise "Oh- hi!"
-
-    hide oh look with easeoutright
-
-    show mr silversaw neutral at right with easeinright
-    show elise neutraler with easeinright:
+    show elise neutraler with ease:
         xalign 0.75
     show johanna neutral with easeinleft:
         xalign 0.25
@@ -535,7 +469,7 @@ label firstcontinuedR:
 
     johanna "Hey, Elise! Raymond and I just came to give you this- you left it behind in form time."
 
-    "Johanna hands Elise her sketch."
+    "Johanna hands you your sketch."
     show elise surprise:
         xalign 0.75
     elise "I thought I had left it somewhere...thanks!"
@@ -546,7 +480,7 @@ label firstcontinuedR:
         xalign 0.75
     show johanna neutral:
         xalign 0.25
-    "Elise glances behind her at the various broken parts of what appeared to be a pair of mechanical wings."
+    "You glance back at the various broken parts of what were meant to be a pair of mechanical wings."
     show elise nervous:
         xalign 0.75
     elise "Heh, thanks...well, if I could get it to work…"
@@ -580,7 +514,7 @@ label firstcontinuedR:
     ray "Bye!"
     show mr silversaw laughter at right
     silversaw "Good day, all of you!"
-    "You, Elise and Johanna leave the workshop."
+    "You, Raymond and Johanna leave the workshop."
     hide ray
     hide elise
     hide johanna
@@ -589,11 +523,11 @@ label firstcontinuedR:
     scene black with dissolve
     "It’s now time to go home."
     scene left folder with dissolve
-    "You pack up your stuff and are ready to go. Elise is looking through her bag, muttering to herself."
+    "You're packing your things, when you realise something is not where it should be."
     elise "Ah, great, I left my folder in the workshop…"
     ray "We can quickly go and get it…"
     show it wont take long1 with dissolve
-    "You look out of the window. The rain seems to have become quite heavy."
+    "Outside the window, the rain is now quite heavy."
     show it wont take long2 with dissolve
     ray "...it won’t take long."
     scene courtyard1 rain with dissolve
@@ -603,7 +537,7 @@ label firstcontinuedR:
 
     elise "There it is!"
     scene drops papers with dissolve
-    "Elise picks up her folder, at which point a strong breeze blows some loose papers out from it and scatters them on the floor, some sliding underneath the tool cupboard door."
+    "You pick up your folder, at which point a strong breeze blows some loose papers out from it and scatters them on the floor, some sliding underneath the tool cupboard door."
     "You both pick up the pages scattered around, but when you get the one in the cupboard…"
     show black with dissolve
     stop music fadeout 1
@@ -619,7 +553,7 @@ label firstcontinuedR:
 
     elise "What was that-what was that?!"
     show black
-    "You try to open the door. It’s locked, and doesn’t open from inside."
+    "Attempts to open the door prove futile."
     scene help with dissolve
     ray "Is anyone out there?! We’re trapped!"
 
@@ -629,7 +563,7 @@ label firstcontinuedR:
     scene trapped1 with dissolve
     ray "Well, in that case, I have just the thing for this situation…"
     
-    "You pull out a box of matches from your pocket."
+    "He pulls out a box of matches."
 
     elise "Why...why do you have those??"
 
@@ -637,7 +571,7 @@ label firstcontinuedR:
 
     elise "You’re not going to start a fire, are you?"
     show trapped2 with dissolve
-    "You light the match."
+    "He lights the match."
 
     ray "Only a tiny one."
 
@@ -653,19 +587,9 @@ label firstcontinuedR:
     "You sit together in silence."
     "…"
 
-    menu:
-        "Try to have a conversation":
-            ray "There are...a lot of tools in here. And they all look...sharp. "
-            elise "They are."
-            ray "Have you used any of these before?"
-            elise "A few times, for a few projects."
-            ray "Like your wings?"
-            elise "Yep."
-        
-        "Say nothing":
-            "..."
-            "You continue to sit in silence, watching the match."
-            "Elise looks a bit uneasy."
+    elise "(Did this have to happen?)"
+    elise "(At this time?)"
+    elise "(In a storm, too...it's dark...and nobody's around to get us out...)"
     show trapped3
     "The match goes out."
     "You’re in darkness for a few moments."
@@ -677,41 +601,37 @@ label firstcontinuedR:
     elise "AHH-! What was- what was-?!"
 
     ray "It’s just the storm outside. It’s alright, don’t worry-"
-
-    elise "I’m scared, Raymond! What if something happens to us in here?!  What if nobody finds us? What if we don’t get out?"
-    elise "I...I don't..."
     scene black with dissolve
-    "Amongst Elise’s panicked shouting, you notice a blue glow filling the room."
-    "The tools shake around before flying off of their hooks."
-    show elisemagic1 at fading
+    scene she panic1 with dissolve
+    elise "I’m scared, Raymond! What if something happens to us in here?!  What if nobody finds us? What if we don’t get out?"
+    scene she panic1 with dissolve
+    elise "I...I don't..."
+    elise "(I can't...)"
+    elise "(...think...my head hurts, and everything feels like ringing...it feels loud...)"
     ray "Elise, please, calm down!"
     ray "What is happening here?!"
-    show elisemagic2 at fading
-    "She looks up to see numerous sharp objects circled around her."
+    "You look up."
+    show elisemagic1 at fading
     elise "What’s that?! What’s happening?!"
-    show black at fading
-    show he panic1 at fading
-
+    show elisemagic2 at fading
     ray "Are you doing this?"
     elise "I don’t know!"
-
-    scene he panic2 with dissolve
     ray "Can we put them down?"
-    show black at fading
-    "As soon as you say that, a red glow appears to counter the blue, dropping all of the tools onto the floor."
+    "As soon as he says that, a red glow appears to counter the blue, dropping all of the tools onto the floor."
     scene raymagic with dissolve
     elise "I mean, that works?"
     ray "Was that me?"
 
     elise "We can try that again…"
+    elise "(Unwise.)"
 
     show black at fading
     show tryitray at fading
-    "You gesture your hand upwards. A small blade appears in front of you, and flies forward into the wall."
+    "He gestures his hand upwards. A small blade appears in front of him, and flies forward into the wall."
 
     ray "Wow…"
     show tryitelise at fading
-    "Elise does the same, but her blade flies backwards, almost hitting her."
+    "You try the same, but your blade flies backwards, almost hitting you."
 
     ray "We’d better be careful."
     
@@ -723,25 +643,25 @@ label firstcontinuedR:
 
     "Try clicking some of the tools, to find a way out."
 
-    call screen cupboardR()
+    call screen cupboardE()
 
-label screwdriverR:
+label screwdriverE:
     "You try to pick the lock open."
     "It doesn't work."
     "The door is quite stuck in its place."
-    call screen cupboardR()
+    call screen cupboardE()
 
-#label lightswitchR:
+#label lightswitchE:
 #    "The light switch is broken."
-#    call screen cupboardR()
+#    call screen cupboardE()
 
-label escapecupboardR:
+label escapecupboardE:
     "You notice the knife lodged into the wall, and an idea pops into your head."
     
-    ray "What we tried, just now, with the knives…"
-    "What if we tried that again?"
+    elise "We can destroy the lock."
+    elise "With what we just tried with all those blades..."
     scene breakout1 with dissolve
-    elise "Is this safe?"
+    elise "Though, I doubt how safe this is..."
 
     ray "It’s about as safe as freezing to death in a cupboard during a storm."
 
@@ -785,31 +705,28 @@ label escapecupboardR:
     scene black with dissolve
     pause 1
 
-    "You arrive home."
-    scene pseudelandmanorwallpaper with dissolve
-    rosanna "Raymond! Where have you been?! I was so worried about you! Are you alright??"
-    show ray nervous2 with easeinleft
-    ray "I’m okay, Mother, it’s just that…"
-    show ray ohheck
-    ray "(Ah, darn. I can’t tell her about what happened. She’ll worry.)"
-    show ray awkward
-    ray "...that I got a little lost on the train coming home. Yes."
-    ray "But I know the way, now. It won’t happen again."
+    "You arrive home. Your mother has been waiting for you."
+    scene realismanorwallpaper with dissolve
+    sara "My, you’ve come home late, Elise."
+    show elise nervous with easeinleft
+    elise "I was just working on my project in the workshop."
+    sara "This late?"
+    show elise neutraler
+    elise "...yes."
+    "Your mother gives you a puzzled look."
+    sara  "Are you alright, Elise?"
+    show elise tired
+    elise "Yes, I’m fine."
+    elise "Just a little tired. I think I’ll go to bed early tonight."
+
     stop music fadeout 1
     scene black with dissolve
-    "Later that night..."
-    ray "(Huh...)"
-    ray "(What if I try this...again...)"
-    scene tryagain with dissolve
-    pause 1
-    show donttryagain with vpunch
-    pause 1
-    "Don't."
-    "Something about it can't be right."
-    "It's dangerous."
 
-    scene black with dissolve
-    scene tryagain with dissolve
+    elise "(I feel unusually tired...this doesn't happen...)"
+    elise "(I don't even have the energy to think anymore...)"
+
+    scene breakout1 with dissolve
+
     "By now you've probably noticed the number in the corner of your screen, labelled 'Control'."
     "The higher it is, the more control you have over your powers, and vice-versa."
     "It increases when you feel calmer, and decreases when you aren't."
@@ -818,7 +735,7 @@ label escapecupboardR:
 
     scene black with dissolve
 
-    queue music ["audio/blessing-piano.mp3", "audio/a-blessing-and-a-curse.mp3"] loop
+    queue music ["audio/stranger-piano.mp3", "audio/who-is-this-stranger.mp3"] loop
 
     "It's the last week of school and today, there’s a school trip to the History Museum in the city."
     scene museum with dissolve
@@ -874,131 +791,78 @@ label escapecupboardR:
 
     "Try clicking on the displays."
 
-    call screen museumR()
+    call screen museumE()
 
-label royalportraitsR:
+label royalportraitsE:
     scene royalportraits with dissolve
 
     pause 3
 
-    show ray neutral with easeinleft:
+    show elise neutral with easeinleft:
         xalign 0.25
-    show catherine neutral at left with easeinleft
-    show maribel neutral with easeinright:
+    show catia neutral at left with easeinleft
+    show johanna neutral with easeinright:
         xalign 0.75
-    show fritz neutral at right with easeinright
+    show antoine neutral at right with easeinright
 
-    show maribel surprise:
-        xalign 0.75
-    maribel "Ooh, look, portrait gallery!"
-    show maribel neutral:
-        xalign 0.75
-    catherine "I feel like I’ve seen some of these people before…"
-    "You observe some of the pictures on the wall."
-    show ray confused:
+    show elise surprise:
         xalign 0.25
-    ray "Is that…?"
-    show fritz thoughtful at right
-    fritz "Pseudeland’s family."
-    show ray awkward:
-        xalign 0.25
-    ray "My parents...?"
-    show ray neutral:
-        xalign 0.25
-    show maribel smile:
+    elise "Hey...that's my mother!"
+    show elise neutraler
+    show johanna neutral:
         xalign 0.75
-    show fritz neutral at right
-    maribel "I thought they kind of looked ike you."
-    show maribel neutral:
-        xalign 0.75
-    catherine "Over here, there's another one."
-    "You look over to see a portrait of the Queen of Realis."
-    show catherine neutral at left
-    catherine "I hear their queen’s a bit of a scary ruler…"
-    show ray confused:
-        xalign 0.25
-    ray "I don’t see any paintings from the Etceter region anywhere…"
-    show maribel surprise:
-        xalign 0.75
-    maribel "Apparently they're just super secretive?"
-    show ray neutral:
-        xalign 0.25
-    ray "Hmm…"
+    johanna "I almost thought that was you for a minute..."
+
+    show catia smile at left
+    catia "I thought you looked similar!"
+    show catia neutral at left
+    show antoine smile at right
+    antoine "And that must be the Pseudeland Region's family on the left."
+    show antoine neutral at right
+    antoine "I wonder why the Etceter Region doesn't have a portrait? They're a part of this Isle too..."
 
     scene black with dissolve
     scene museum with dissolve
+    call screen museumE()
 
-    call screen museumR()
-
-label mapofscholiteR:
+label mapofscholiteE:
     scene mapofscholite with dissolve
-
-    show ray neutral with easeinleft:
+    pause 3
+    show elise neutral with easeinleft:
         xalign 0.25
-    show catherine neutral at left with easeinleft
-    show maribel neutral with easeinright:
+    show catia neutral at left with easeinleft
+    show johanna neutral with easeinright:
         xalign 0.75
-    show fritz neutral at right with easeinright
-
-    ray "The entire Isle of Scholite…"
-    show ray awkward:
+    show antoine neutral at right with easeinright
+    show elise laughter:
         xalign 0.25
-    ray "Strange, I had never been out of the Pseudeland region before moving to the school."
-    show ray neutral:
-        xalign 0.25
-    show catherine neutral at left
-    catherine "I can see Laurum Secondary on the map."
-    show maribel surprise:
+    elise "Oooh, I can see where my home is on here! Realis!"
+    antoine "And there’s our school, up in north Scholite City."
+    show johanna surprise:
         xalign 0.75
-    maribel "I wonder if I can find my home on here…"
-    show maribel neutral:
-        xalign 0.75
-    ray "Scholite City is a lot bigger than I thought."
-    ray "Maybe one day I’ll explore around some more."
-
+    johanna "The Isle of Scholite seems so much bigger when you look at it as a whole..."
     scene black with dissolve
     scene museum with dissolve
+    call screen museumE()
 
-    call screen museumR()
-
-label sworddisplayR:
+label sworddisplayE:
     scene sworddisplay with dissolve
+    pause 3
 
-    show ray neutral with easeinleft:
+    show elise neutraler with easeinleft:
         xalign 0.25
-    show catherine neutral at left with easeinleft
-    show maribel neutral with easeinright:
+    show catia neutral at left with easeinleft
+    show johanna neutral with easeinright:
         xalign 0.75
-    show fritz neutral at right with easeinright
+    show antoine neutral at right with easeinright
 
-    show maribel surprise:
-        xalign 0.75
-    maribel "So fancy...and shiny!"
-
-    ray "…"
-    
-    ray "Uh…"
-    $ control -= 10
-
-    show fritz raised eyebrows at right
-    fritz "A problem?"
-    show ray nervous2:
-        xalign 0.25
-    ray "No, no, not at all…"
-    show ray ohheck:
-        xalign 0.25
-    ray "(Darn. If something happens here...)"
-    ray "(Turn away now, turn away now...)"
-    show ray awkward:
-        xalign 0.25
-    ray "Uh...Oh, look at the time!"
-    "The clock has turned to two o’clock."
-    ray "We should be going back now."
-
-    scene black with dissolve
-    scene sworddisplay2 with dissolve
-
-    "You can’t help but notice a faint red glow inside of the display."
+    johanna "They’re pretty well-polished, for having been here so long."
+    catia "Shiny. And sharp."
+    elise "(Sharp…very sharp.)"
+    "Pay no attention to the sinking feeling inside of you."
+    $ mp.control -= 5
+    antoine "Looks like it’s time to head back."
+    "The clock has turned to 2 o’clock."
 
     scene black with dissolve
     scene museum with dissolve
@@ -1009,27 +873,30 @@ label sworddisplayR:
     als "However, we’ll have to get going quickly, before we miss the train home."
     scene black with dissolve
     scene street with dissolve
-    "You all walk out of the building and along the road to the train station."
-    "You walk a little bit behind the group."
+
+    "You try to stay with the group and not get left behind."
     "…"
-    "Was that glass breaking?"
-    ray "Hm? What is…"
-    show sword at left with easeinright:
-        yalign 0.2
-    ray "Oh, goodness- Uh…"
-    ray "You’re not supposed to be out of your case! Ah...uh…"
-    ray "Go back- get back to the museum, now."
-    "You gesture upwards, attempting to send it back to its proper place."
-    hide sword with easeoutright
-    "The sword moves, seemingly reluctantly, towards the museum entrance, before dropping onto the ground again."
-    ray "Eh...close enough."
+    "You somehow ended up a bit behind."
+    "Looking behind you, there appears to be a sword from that display, now on the ground at the museum entrance."
 
-    "The group has gone ahead, and you run to catch up."
+    elise "(How did that…why…??)"
+
+    "As the thought crosses your mind, a blue glow appears around the sword."
+    "It flies right at you."
+
+    show sword at flyfastleft
+    pause 0.2
+
+    $ mp.control -= 10
+
+    "You start running at full speed to the train station."
     scene trainstation day with dissolve
-    "The class arrives at the train station. The train has already arrived."
 
-    "You’re about to board the train when a blue glint catches the corner of your eye."
-    "You instantly know who it is. And she’s running right towards you. From what, you don’t know."
+    "The class is already there, and the train has already arrived."
+
+    "Looking behind you, the sword has now cloned itself into three."
+
+    "You see Raymond standing at quite a distance from the group."
 
     elise "aaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-"
     show elise panic at run
@@ -1039,9 +906,6 @@ label sworddisplayR:
     show sword at flyfastleft
     pause 0.2
     show sword at flyfastleft
-
-    "She runs past you, and ducks down to let three copies of that same sword zoom past her head."
-    "She reaches her hand out, stopping the blades in an instant."
 
     show ray confused at right with easeinright
     ray "What happened??"
@@ -1126,15 +990,15 @@ label sworddisplayR:
 
             "In an unfamiliar place like this, you start to feel a little uneasy."
 
-            $ control -= 5
+            $ control -= 10
         
             "The view outside now looks different."
 
-            "The train is taking a familiar amount of time."
-
-            "You look outside."
+            "It'll be late soon."
 
             ray "Wait, I usually pass by this station when coming back from school!"
+
+            "!!"
 
             elise "You know the way from here?"
 
@@ -1184,46 +1048,27 @@ label sworddisplayR:
     elise "And...stay safe."
     ray "You too, Elise."
 
-    hide elise with easeoutright
+    hide ray with easeoutleft
 
-    show ray neutral with ease
-    ray "(Stay safe?)"
-    ray "(I’ll try to…)"
-
+    show elise neutraler at right
+    elise "(Stay safe?)"
     stop music fadeout 1
-
     scene black with dissolve
-    ray "(If I can.)"
-    
-    "..."
+    elise "(Easier said than done.)"
 
-    "???" "Agh...my head..."
-    "???" "it hurts..."
-    "???" "...so much..."
-    "??? (2)" "Increase the input level. No result has shown yet."
-    "???" "Please...don't..."
-    "??? (2)" "It's for the good of our Region."
-    "???" "The other Regions are right about us..."
-    "???" "iT HURTS-!"
-    "???" "STOP! THEIR THEORY WAS INCORRECT! THE STRANGE HAPPENINGS DON'T EXIST!"
-    "??? (2)" "What?"
-    "???" "Why...would you believe...the Scholite researchers...?"
-    "??? (3)" "The King's agents have found the facility."
-    "??? (3)" "Stop the research. Leave."
+    "Pay it no mind."
 
-    show end first ray1 at fading
+    scene end first elise with dissolve
 
-    ray "(The hell was that??)"
-    ray "(What kind of dream was that??)"
-    ray "(Just a dream, eh...?)"
-    show end first ray2
-    ray "(Right. Just a dream.)"
-    ray "(Go back to sleep.)"
+    elise "(But some things are much more difficult to ignore.)"
+    elise "(If I don't think about it, it'll go away, won't it?)"
+    elise "(Won't it?)"
 
     scene black with dissolve
 
-    "End: First Year."
+    "End: First Year."  
 
-    $ currentyear = 1.5
+    $ mp.currentyear = 1.5
+    $ mp.nextyear = True
 
     jump devmessage
